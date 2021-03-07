@@ -1,0 +1,48 @@
+.heroNews-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.heroNews-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+    object-fit: contain;
+}
+
+.heroNews-container .judul {
+    text-align: center;
+}
+
+.heroNews-container h1 {
+    color: #fff;
+    font-size: 64px;
+    padding-left: 100px;
+}
+
+.heroNews-container p {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 70px;
+}
+
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 768px) {
+    .heroNews-container h1 {
+        font-size: 45px;
+        padding-left: 0;
+    }
+    .heroNews-container p {
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}

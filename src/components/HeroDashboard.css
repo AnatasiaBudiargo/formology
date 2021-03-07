@@ -1,0 +1,78 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.heroDashboard-container img {
+    margin-top: -200px;
+    height: 330px;
+}
+
+.heroDashboard-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+    object-fit: contain;
+}
+
+.heroDashboard-container h3 {
+    color: #fff;
+    font-size: 70px;
+    margin: -5px 0;
+}
+
+.heroDashboard-container p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heroDashboard-button {
+    margin-top: 32px;
+}
+
+.heroDashboard-button .button {
+    margin: 6px;
+}
+
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .heroDashboard-container h3 {
+        font-size: 70px;
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroDashboard-container img {
+        height: 250px;
+        margin-bottom: 80px;
+        margin-top: -80px;
+    }
+    .heroDashboard-container h3 {
+        font-size: 50px;
+        margin-top: -100px;
+    }
+    .heroDashboard-container p {
+        font-size: 30px;
+    }
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+    .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
