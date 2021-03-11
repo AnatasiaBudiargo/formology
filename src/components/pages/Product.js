@@ -1,20 +1,16 @@
-import React from 'react';
-import '../../App.css';
-import HeroProduct from '../HeroProduct';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import React from "react";
+import "../../App.css";
+import HeroProduct from "../items1/HeroProduct";
+import Navbar from "../items1/Navbar";
+import Footer from "../items1/Footer";
 
 function Product() {
-    return ( <
-        >
-        <
-        Navbar / >
-        <
-        HeroProduct / >
-        <
-        Footer / >
-        <
-        />
+    return (
+        <>
+            <Navbar />
+            <HeroProduct />
+            <Footer />
+        </>
     );
 }
 

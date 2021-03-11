@@ -1,0 +1,72 @@
+.container-bahan-pangan {
+    z-index: 2;
+    margin-top: -15vh;
+}
+
+.container-bahan-pangan .options {
+    margin-bottom: 5vh;
+}
+
+.container-bahan-pangan .options a {
+    padding: 0 2vh;
+    margin: 0 1vh;
+    color: #000;
+}
+
+.container-bahan-pangan .content h2 {
+    font-size: 1.2rem;
+}
+
+.container-bahan-pangan .options #left {
+    text-align: right;
+}
+
+.container-bahan-pangan ul li {
+    list-style: none;
+    padding: 1vh 3vh;
+}
+
+.container-bahan-pangan .cat {
+    background-color: #e99938;
+}
+
+.container-bahan-pangan #list:hover {
+    background-color: rgba(233, 153, 56, 10%);
+}
+
+.container-bahan-pangan .cat h2 {
+    color: #fff;
+}
+
+.container-bahan-pangan .sidebar {
+    padding-left: 5vw;
+}
+
+.container-bahan-pangan .konten a {
+    color: #000;
+}
+
+.container-bahan-pangan #kategori {
+    overflow: hidden;
+}
+
+.container-bahan-pangan .sides {
+    border-radius: 10px;
+    width: 70%;
+    border: 0.5 solid red;
+}
+
+.segeraHadir .content {
+    width: 50vh;
+    position: absolute;
+    margin: 15vh 0 0 20vh;
+}
+
+@media screen and (max-width: 768px) {
+    .segeraHadir .content {
+        margin: 15vh 0 0 10vh;
+    }
+    .segeraHadir {
+        overflow-x: hidden;
+    }
+}

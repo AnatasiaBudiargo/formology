@@ -1,20 +1,18 @@
-import React from 'react';
-import '../../App.css';
-import HeroHome from '../HeroHome';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import React from "react";
+import "../../App.css";
+import Navbar from "../items1/Navbar";
+import HeroHome from "../items1/HeroHome";
+import Home_SeputarPertanian from "../items2/Home_SeputarPertanian";
+import Footer from "../items1/Footer";
 
 function Home() {
-    return ( <
-        >
-        <
-        Navbar / >
-        <
-        HeroHome / >
-        <
-        Footer / >
-        <
-        />
+    return (
+        <>
+            <Navbar />
+            <HeroHome />
+            <Home_SeputarPertanian />
+            <Footer />
+        </>
     );
 }
 

@@ -1,0 +1,47 @@
+.container-seputar-pertanian {
+    background-color: white;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.container-seputar-pertanian h1 {
+    color: #b26b00;
+}
+
+.container-seputar-pertanian h3 {
+    font-size: 1.5rem;
+}
+
+.container-seputar-pertanian p {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #6a6a6a;
+}
+
+.container-seputar-pertanian img {
+    height: 54vh;
+}
+
+.container-seputar-pertanian .berita {
+    width: 54vh;
+}
+
+.card-berita {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+@media screen and (max-width: 768px) {
+    .card-berita {
+        width: 75vw;
+        grid-gap: 5vw;
+    }
+    .container-seputar-pertanian h1 {
+        font-size: 1.5rem;
+    }
+}
