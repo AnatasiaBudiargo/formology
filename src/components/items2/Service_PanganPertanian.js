@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../App.css";
 import "./Service_PanganPertanian.css";
 import { Row, Col } from "antd";
@@ -7,13 +7,12 @@ import image2 from "../../images/google.png";
 import { Input } from "antd";
 import { Menu, Dropdown, Button, message, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import bawangmerah from "../../images/bawang merah.png";
-import bawangputih from "../../images/bawang putih.png";
-import jahe from "../../images/jahe.png";
+import { dataPangan } from "../../dataPangan";
+import { dataPertanian } from "../../dataPertanian";
 
 function handleMenuClick(e) {
     message.info("Click on menu item.");
-    console.log("click", e);
+    console.log(dataPangan);
 }
 
 const menu = (
@@ -24,16 +23,50 @@ const menu = (
     </Menu>
 );
 
+// $(document).ready(function() {
+
+//     function pageAllCategories() {
+//         allCategories.style.display = "flex";
+//         mostUsed.style.display = "none";
+//     }
+//     ButtonAllCategories.addEventListener('click', function() {
+//         pageAllCategories()
+//     });
+
+//     function pageMostUsed() {
+//         allCategories.style.display = "none";
+//         mostUsed.style.display = "flex";
+//     }
+//     ButtonMostUsed.addEventListener('click', function() {
+//         pageMostUsed()
+//     });
+
+// });
+
 function Service_PanganPertanian() {
+    const [isPertanian, setIsPertanian] = useState(false);
+
+    const tampilPertanian = () => {
+        setIsPertanian(true);
+    };
+
+    const tampilPangan = () => {
+        setIsPertanian(false);
+    };
+
     return (
         <div className="container-bahan-pangan">
             <div className="options">
                 <Row className="row">
                     <Col span={12} id="left">
-                        <a href=""> Bahan Pangan </a>
+                        <p href="#" onClick={tampilPangan}>
+                            Bahan Pangan
+                        </p>
                     </Col>
                     <Col span={12}>
-                        <a href=""> Bahan Pertanian </a>
+                        <p href="#" onClick={tampilPertanian}>
+                            Bahan Pertanian
+                        </p>
                     </Col>
                 </Row>
             </div>
@@ -103,190 +136,73 @@ function Service_PanganPertanian() {
                                     </Space>
                                 </Col>
                             </Row>
-                            <div className="rekomendasi">
-                                <div className="container">
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangputih} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Putih </h2>
-                                                <p> SUDORSONO, BOJONEGORO </p>
-                                                <h5> Rp. 65.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={jahe} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Jahe </h2>
-                                                <p> SAMSUDIN, NGANJUK </p>
-                                                <h5> Rp. 50.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div className="card">
-                                        <div className="image">
-                                            <img src={bawangmerah} />
-                                        </div>
-                                        <Row>
-                                            <Col span={12}>
-                                                <h2> Bawang Merah </h2>
-                                                <p> SUMARTONO, BANYUWANGI </p>
-                                                <h5> Rp. 75.000/kg </h5>
-                                            </Col>
-                                            <Col span={12}>
-                                                <button> Beli </button>
-                                            </Col>
-                                        </Row>
+                            {isPertanian ? (
+                                // Tempat Pertanian
+                                <div className="rekomendasi bahanPertanian">
+                                    <div className="container">
+                                        {dataPertanian.map((item, index) => {
+                                            return (
+                                                <div className="card">
+                                                    <div className="image">
+                                                        <img
+                                                            src={item.gambar}
+                                                        />
+                                                    </div>
+                                                    <Row>
+                                                        <Col span={12}>
+                                                            <h2>{item.nama}</h2>
+                                                            <p>{item.ket}</p>
+                                                            <h5>
+                                                                {item.harga}
+                                                            </h5>
+                                                        </Col>
+                                                        <Col span={12}>
+                                                            <button>
+                                                                Beli
+                                                            </button>
+                                                        </Col>
+                                                    </Row>
+                                                </div>
+                                            );
+                                        })}
+                                        ;
                                     </div>
                                 </div>
-                            </div>
+                            ) : (
+                                // Tempat Pangan
+                                <div className="rekomendasi bahanPangan">
+                                    <div className="container">
+                                        {dataPangan.map((item, index) => {
+                                            return (
+                                                <div className="card">
+                                                    <div className="image">
+                                                        <img
+                                                            src={item.gambar}
+                                                        />
+                                                    </div>
+                                                    <Row>
+                                                        <Col span={12}>
+                                                            <h2>{item.nama}</h2>
+                                                            <p>{item.ket}</p>
+                                                            <h5>
+                                                                {item.harga}
+                                                            </h5>
+                                                        </Col>
+                                                        <Col span={12}>
+                                                            <button>
+                                                                Beli
+                                                            </button>
+                                                        </Col>
+                                                    </Row>
+                                                </div>
+                                            );
+                                        })}
+                                        ;
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* bahan pertanian */}
                         </div>
                     </Col>
                 </Row>

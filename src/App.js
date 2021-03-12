@@ -7,6 +7,7 @@ import Home from "./components/pages/Home";
 import SignUp from "./components/pages/SignUp";
 import News from "./components/pages/News";
 import Service from "./components/pages/Service";
+import Keranjang from "./components/pages/Keranjang";
 // import Product from './components/pages/Product';
 import Login from "./components/pages/Login";
 import Profile from "./components/pages/Profile";
@@ -45,6 +46,7 @@ function App() {
                     />
                     <Route path="/News" exact component={News} />
                     <Route path="/Service" exact component={Service} />
+                    <Route path="/Keranjang" exact component={Keranjang} />
                     {/* <Route path="/Product" exact component={Product} /> */}
                     <Route path="/Profile" exact component={Profile} />
                     <Route path="/Profile" exact component={Profile} />

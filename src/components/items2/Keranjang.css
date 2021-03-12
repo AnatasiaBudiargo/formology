@@ -1,0 +1,115 @@
+.container-service-keranjang {
+    z-index: 2;
+    margin-top: -8vh;
+}
+
+.container-service-keranjang h1,
+.container-service-keranjang h2 {
+    color: #b26b00;
+    padding-bottom: 5vh;
+}
+
+.container-service-keranjang h2 {
+    font-size: 2.2rem;
+}
+
+.container-service-keranjang span {
+    color: #b26b00;
+    font-size: 2.2rem;
+}
+
+.container-service-keranjang #ket {
+    color: #b26b00;
+    font-size: 1.5rem;
+}
+
+.container-service-keranjang h1 {
+    text-align: center;
+}
+
+.container-service-keranjang .options hr {
+    margin-bottom: 3vh;
+}
+
+.container-service-keranjang .options {
+    margin: auto;
+    width: 80%;
+}
+
+.container-service-keranjang hr {
+    border-bottom: 5px solid rgb(135, 135, 135);
+    margin-top: -3vh;
+}
+
+.container-service-keranjang .card {
+    margin-left: 3vw;
+    margin-top: 2vh;
+}
+
+.container-service-keranjang .card .isi {
+    display: flex;
+    font-size: 2rem;
+}
+
+.container-service-keranjang .card .isi h3 {
+    margin-top: 10vh;
+    margin-bottom: -13vh;
+}
+
+.container-service-keranjang .card img {
+    width: 45vh;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.container-service-keranjang .gambar-status img {
+    position: absolute;
+    width: 10vw;
+    height: 18vh;
+    padding: 1vw;
+    margin-left: 15vw;
+}
+
+.container-service-keranjang .card button {
+    width: 7vw;
+    height: 2.5vw;
+    margin-left: 8.5vw;
+    border: 0 solid transparent;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+.container-service-keranjang .card button:hover {
+    color: #000;
+}
+
+.container-service-keranjang .sub-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+    background-color: #f1f1f1;
+    height: 30vh;
+    margin-top: 20vh;
+}
+
+.container-service-keranjang .sub-total h2 {
+    padding-top: 5vh;
+}
+
+.container-service-keranjang .sub-total button {
+    padding: 1vh 0;
+    width: 7vw;
+    border-radius: 5px;
+    border: 0 solid transparent;
+    background-color: #e99938;
+    cursor: pointer;
+}
+
+.container-service-keranjang .sub-total button:hover {
+    color: #fff;
+}
+
+.container-service-keranjang @media screen and (max-width: 768px) {}

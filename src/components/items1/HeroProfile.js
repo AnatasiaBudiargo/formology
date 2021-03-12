@@ -6,6 +6,26 @@ import image from "../../images/service-segeraHadir.png";
 import image2 from "../../images/google.png";
 import imageProfile from "../../images/avatar-2.png";
 
+// $(document).ready(function() {
+
+//     function pageAllCategories() {
+//         allCategories.style.display = "flex";
+//         mostUsed.style.display = "none";
+//     }
+//     ButtonAllCategories.addEventListener('click', function() {
+//         pageAllCategories()
+//     });
+
+//     function pageMostUsed() {
+//         allCategories.style.display = "none";
+//         mostUsed.style.display = "flex";
+//     }
+//     ButtonMostUsed.addEventListener('click', function() {
+//         pageMostUsed()
+//     });
+
+// });
+
 function HeroProfile() {
     return (
         <div className="heroProfile-container">
