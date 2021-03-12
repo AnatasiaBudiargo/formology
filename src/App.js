@@ -10,6 +10,8 @@ import Service from "./components/pages/Service";
 // import Product from './components/pages/Product';
 import Login from "./components/pages/Login";
 import Profile from "./components/pages/Profile";
+import StatusPengguna from "./components/pages/StatusPengguna";
+import MemulihkanKataSandi from "./components/pages/MemulihkanKataSandi";
 // import PrivateRoute from "./config/PrivateRoute";
 import { AuthContext } from "./config/Auth";
 
@@ -31,9 +33,20 @@ function App() {
                     <Route path="/Home" exact component={Home} />]
                     <Route path="/Login" exact component={Login} />
                     <Route path="/SignUp" exact component={SignUp} />
+                    <Route
+                        path="/StatusPengguna"
+                        exact
+                        component={StatusPengguna}
+                    />
+                    <Route
+                        path="/MemulihkanKataSandi"
+                        exact
+                        component={MemulihkanKataSandi}
+                    />
                     <Route path="/News" exact component={News} />
                     <Route path="/Service" exact component={Service} />
                     {/* <Route path="/Product" exact component={Product} /> */}
+                    <Route path="/Profile" exact component={Profile} />
                     <Route path="/Profile" exact component={Profile} />
                 </Switch>
             </Router>

@@ -1,36 +1,34 @@
 import React from "react";
 import "../../App.css";
-import { Button } from "./Button";
-import "./HeroDashboard.css";
+import "./HeroStatusPengguna.css";
 import video1 from "../../videos/video-2.mp4";
-import image1 from "../../images/farmology logo-01-01.png";
+import { Button } from "./Button";
 import { Link } from "react-router-dom";
 
-function HeroDashboard() {
+function HeroStatusPengguna() {
     return (
-        <div className="heroDashboard-container">
+        <div className="heroStatusPengguna-container">
             <video autoPlay loop muted>
                 <source src={video1} type="video/mp4" />
             </video>
-            <img src={image1} />
-            <h3> FARMOLOGY </h3>
+            <h1> Apakah anda sebagai? </h1>
             <div className="hero-button">
-                <Link to="/StatusPengguna">
+                <Link to="/SignUp">
                     <Button
                         className="button"
                         buttonStyle="btn-outline"
                         buttonSize="btn-large"
                     >
-                        DAFTAR
+                        Pemasok
                     </Button>
                 </Link>
-                <Link to="/Login">
+                <Link to="/SignUp">
                     <Button
                         className="button"
                         buttonStyle="btn-primary"
                         buttonSize="btn-large"
                     >
-                        MASUK
+                        Pembeli
                     </Button>
                 </Link>
             </div>
@@ -38,4 +36,4 @@ function HeroDashboard() {
     );
 }
 
-export default HeroDashboard;
+export default HeroStatusPengguna;

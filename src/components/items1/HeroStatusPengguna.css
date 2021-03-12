@@ -6,12 +6,7 @@ video {
     z-index: -1;
 }
 
-.heroDashboard-container img {
-    margin-top: -200px;
-    height: 330px;
-}
-
-.heroDashboard-container {
+.heroStatusPengguna-container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -22,21 +17,10 @@ video {
     object-fit: contain;
 }
 
-.heroDashboard-container .hero-button {
-    margin-top: 7vh;
-}
-
-.heroDashboard-container h3 {
+.heroStatusPengguna-container h1 {
     color: #fff;
-    font-size: 70px;
-    margin: -5px 0;
-}
-
-.heroDashboard-container p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10vh;
+    margin-top: -20vh;
 }
 
 .heroDashboard-button {

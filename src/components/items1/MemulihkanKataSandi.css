@@ -1,0 +1,52 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.heroMemulihkanKataSandi-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.heroMemulihkanKataSandi-container #atas {
+    color: #e5e5e5;
+}
+
+.heroMemulihkanKataSandi-container h2,
+.heroMemulihkanKataSandi-container h1,
+.heroMemulihkanKataSandi-container h5 {
+    color: #fff;
+}
+
+.heroMemulihkanKataSandi-container h5 {
+    padding-top: 2vh;
+}
+
+.heroMemulihkanKataSandi-container .container {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25vw;
+    padding: 5vh;
+}
+
+.heroMemulihkanKataSandi-container .container button {
+    margin-left: -0.1vw;
+    height: 4.5vh;
+    background-color: #e99938;
+    border: 0 solid transparent;
+    margin-top: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+    .heroMemulihkanKataSandi-container .container {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 80vw;
+    }
+}

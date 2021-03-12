@@ -1,10 +1,15 @@
 .container-bahan-pangan {
     z-index: 2;
-    margin-top: -15vh;
+    margin-top: -5vh;
 }
 
 .container-bahan-pangan .options {
     margin-bottom: 5vh;
+}
+
+.container-bahan-pangan .options a:hover {
+    color: #e99938;
+    border-bottom: 1px solid #e99938;
 }
 
 .container-bahan-pangan .options a {
@@ -23,19 +28,29 @@
 
 .container-bahan-pangan ul li {
     list-style: none;
-    padding: 1vh 3vh;
+    /* margin-top: -0.2vh; */
+    /* margin-bottom: -1.1vh; */
+    padding: 0.1vh 0;
+}
+
+.container-bahan-pangan #kategori {
+    border: 0.1px solid rgb(197, 197, 197);
+    overflow: hidden;
 }
 
 .container-bahan-pangan .cat {
+    padding-top: 3vh;
     background-color: #e99938;
-}
-
-.container-bahan-pangan #list:hover {
-    background-color: rgba(233, 153, 56, 10%);
 }
 
 .container-bahan-pangan .cat h2 {
     color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.container-bahan-pangan #list:hover {
+    background-color: rgba(233, 153, 56, 10%);
 }
 
 .container-bahan-pangan .sidebar {
@@ -46,14 +61,105 @@
     color: #000;
 }
 
-.container-bahan-pangan #kategori {
-    overflow: hidden;
+.container-bahan-pangan #kategori button {
+    width: 19.5vw;
+    height: 6vh;
+    text-align: left;
+    margin-left: -0.4px;
+    border: 0 solid transparent;
+    background-color: transparent;
+    padding-left: 2rem;
 }
 
 .container-bahan-pangan .sides {
+    margin-top: 5vh;
     border-radius: 10px;
     width: 70%;
-    border: 0.5 solid red;
+    border: 0.1px solid rgb(197, 197, 197);
+}
+
+.container-bahan-pangan .InfoBerlangganan {
+    text-align: center;
+    background-color: rgba(233, 153, 56, 10%);
+    padding: 2vh 0;
+    border: 0 solid transparent;
+}
+
+.container-bahan-pangan .InfoBerlangganan ul li {
+    padding-bottom: 1.5vh;
+}
+
+.container-bahan-pangan .InfoBerlangganan button {
+    background-color: #e99938;
+    height: 6vh;
+    border: 0 solid transparent;
+    border-radius: 10px;
+}
+
+.container-bahan-pangan #kategori button:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.container-bahan-pangan button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.InfoBerlangganan h3 {
+    padding-top: 1vh;
+    font-size: 1.5rem;
+}
+
+.container-bahan-pangan .content #rekom {
+    color: #e99938;
+}
+
+.container-bahan-pangan .rekomendasi .card {
+    width: 21vw;
+    height: 37vh;
+    margin-top: 2vh;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 5vh;
+}
+
+.container-bahan-pangan .card h2 {
+    margin-bottom: -1px;
+}
+
+.container-bahan-pangan .rekomendasi h5 {
+    color: #e99938;
+    margin-bottom: -5px;
+}
+
+.container-bahan-pangan .rekomendasi p {
+    color: rgb(162, 162, 162);
+    font-size: 0.8rem;
+}
+
+.container-bahan-pangan .rekomendasi img {
+    width: 360px;
+}
+
+.container-bahan-pangan .rekomendasi button {
+    width: 4vw;
+    height: 3.5vh;
+    float: right;
+    margin-top: 20%;
+    border: 0 solid transparent;
+    background-color: #ffca68;
+}
+
+.container-bahan-pangan .rekomendasi .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.2vw;
+}
+
+.container-bahan-pangan .card .image {
+    overflow: hidden;
+    width: 100vw;
 }
 
 .segeraHadir .content {

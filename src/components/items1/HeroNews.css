@@ -13,12 +13,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
 }
 
 .heroNews-container .judul {
     text-align: center;
+    margin-top: 35vh;
+    line-height: 8vh;
 }
 
 .heroNews-container h1 {
@@ -30,13 +32,18 @@
 .heroNews-container p {
     color: #fff;
     font-size: 24px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     padding-left: 70px;
+    margin-bottom: -1.5vh;
 }
 
 @media screen and (max-width: 960px) {}
 
 @media screen and (max-width: 768px) {
+    .heroNews-container .judul {
+        margin-top: 0vh;
+        line-height: 8vh;
+    }
     .heroNews-container h1 {
         font-size: 45px;
         padding-left: 0;
